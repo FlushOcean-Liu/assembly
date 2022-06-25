@@ -1,6 +1,16 @@
 .section .data    # 初始化的变量
 output: 
-    .ascii "hello world\n"
+    .ascii "hello world\n"  # .ascii 文本字符串
+                            # .asciz 以NULL结束的文本字符串
+                            # .byte 字节值
+                            # .double 双精度浮点数
+                            # .float 单精度浮点数
+                            # .int 32位整数
+                            # .long 32位整数
+                            # .octa 16位整数
+                            # .quad 8位整数
+                            # .short 16位整数
+                            # .single 单精度浮点数
 
 .section .bss     # 未初始化的变量，由0填充的缓冲区
     .lcomm num,20 # lcomm为本地内存区域，由0填充的缓冲区
