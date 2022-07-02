@@ -1,8 +1,8 @@
-.section .data
+.section .data  #数据段，可选
 output:
     .ascii "The processor Vendor ID is 'xxxxxxxxxxxx'\n"
 
-.section .text
+.section .text  #文本段，必须有
 .globl _start
 _start:
     movl $0, %eax         # 清零eax
